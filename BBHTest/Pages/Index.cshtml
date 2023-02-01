@@ -1,0 +1,202 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nikolass Sakovics CV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: navy;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-third">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+		<div class="w3-display-container">
+            
+           <img src="~/pictures/face.jpg" class="image"/> <br /><br /><br />
+           <div class="middle">
+    <a href="https://www.linkedin.com/in/nikolass-sakovics-751a98255/"><div class="text">LinkedIn</div></a>
+  </div>
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Nikolass Sakovics</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Junior programmer</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Jurmala, LV</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>nikolass.sakovics@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+37125718040</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>C#: WPF and .NET</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
+            <p>I've had some experience with creating small WPF applications in UNI as well ass some experiance with ASP.NET</p>
+          </div>
+          <p>Java and JSON</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">
+              <div class="w3-center w3-text-white">60%</div>
+              
+            </div>
+            <p>I've created some JAVA FX applications as well as had some experience combining JAVA with JSON's due Minecraft mod creation. Had a little experience with Sping Boot</p>
+          </div>
+          <p>SQL and query's</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:55%">
+              <div class="w3-center w3-text-white">55%</div>
+              
+            </div>
+            <p>I do have understanding how databases are set and how to write and execute queries. Have an experience in MS SQL server and learning ORACLE database with PL/SQL</p>
+          </div>
+          <p>HTML and CSS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:40%">40%</div>
+            <p>I do have some basic knowledge about HTML syntax as well as how and here CSS can be used. Still having some troubles by creating WEB templates by myself but trying to improve my skills. </p>
+          </div>
+          <p>JavaScript</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:20%">20%</div>
+            <p>JavaScript was not used in this specific project, but I do know how to implement it to the C# projects to get imput from Frontend ar other simple scripts</p>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+            <p>Fluent speaking, writing and texting</p>
+          </div>
+          <p>Latvian</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+            <p>Fluent speaking, writing and texting</p>
+          </div>
+          <p>Russian</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+            <p>Native</p>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Sport centre administrator/ Baltic Beach Hotel and SPA</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Right now, I’m working as a hotel administrator, where I have to communicate with clients, as well as deal with some troubles in a short term.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>NPD asistents/ Double H Nurseries Ltd</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2020 - Aug 2021</h6>
+          <p>Had some working experience in the UK. Had to do some EXCEL tables, google forms and etc.</p>
+          <hr>
+        </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Goals</h6>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Improve my skills in C# and .NET technologies due great interest in it</b></h5>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Build a career in computer systems and technology industry and become a classified developer. </b></h5>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Gain hands-on experience in the field of computer systems
+by working on real-world projects and contributing to the
+success of a team.</b></h5>
+          <br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+
+  <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/nikolass-sakovics-751a98255/"></i>
+  <i class="fa fa-github w3-hover-opacity" href="https://github.com/SAKOLAJ?tab=repositories"></i>
+  
+</footer>
+
+</body>
+</html>
+

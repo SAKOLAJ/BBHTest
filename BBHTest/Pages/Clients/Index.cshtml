@@ -1,0 +1,36 @@
+﻿@page
+@model BBHTest.Pages.Clients.IndexModel
+@{
+}
+
+<br>
+<h2>List of Clients</h2>
+<a class='btn btn-primary btn-sm' href='/Clients/Create'>New Client</a>
+<table class = "table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Surname</th>
+			<th>Phone Number</th>
+			<th>Email Adress</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(var item in Model.listClients)
+		{
+			<tr>
+				<td>@item.id</td>
+				<td>@item.Client_name</td>
+				<td>@item.Client_surname</td>
+				<td>@item.Client_phone_num</td>
+				<td>@item.Client_email</td>
+				<td>
+						<a class='btn btn-primary btn-sm' href="/Clients/Edit?id=@item.id">Edit</a>
+						<a class='btn btn-danger btn-sm' href="/Clients/Delete?id=@item.id">Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
